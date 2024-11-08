@@ -26,7 +26,7 @@ The code inserted by the instrumentation maintains those global data structures,
 ## Challenge 2 -- Aliasing
 
 Invocation local aliasing can be tolerated, but leaking objects to other methods cannot. Note that the instrumentation does not deal
-with variables, but alsways has access with to the actual objects. So from the instrumentaion point of view, invocation-local aliasing 
+with variables, but always has access to the actual objects. So from the instrumentation point of view, invocation-local aliasing 
 is transparent.
 
 **TODO: double check / discuss**
@@ -34,7 +34,7 @@ is transparent.
 ## Challenge 3 - Transfer of Objects between Threads
 
 1. always check for thread association in method returns, e.g. if an object returned by a method is annotated `@Local` and is associated with a different thread, fail
-2. could take advantage  common patterns, i.e. objects used to transfer objects betwen threads. example: `BlockingQueue` with its `put` and `take` methods, perhaps model an intermediate `transfer` state where no thread owns the object
+2. could take advantage of common patterns, i.e. objects used to transfer objects between threads. example: `BlockingQueue` with its `put` and `take` methods, perhaps model an intermediate `transfer` state where no thread owns the object (between `put` and `take`). 
 
 see `examples.Isolated3`
 
