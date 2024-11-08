@@ -13,7 +13,7 @@ public class Isolated1 {
         // as instrumentation resolved references
         Box m2 = obj;
 
-        // success, can locally mutate
+        // success, object can be mutated
         m2.value = "bar";
     }
 }

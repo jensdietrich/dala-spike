@@ -14,12 +14,15 @@ public class Isolated3 {
         @Isolated Box obj = new Box("foo");
         // now the object pointed to by obj is annotated (not the var)
 
+        // succeeds, mutating is ok as long as the thread own the object
+        obj.value = "bar";
+
         // succeeds, puts object in transfer state
         queue.put(obj);
 
         // fails, now control has been passed to another thread
         // so this thread cannot mutate this anymore
-        obj.value = "bar";
+        obj.value = "bar2";
     }
 
 }

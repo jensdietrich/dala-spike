@@ -12,7 +12,7 @@ public class Immutable3 {
         // local alias succeeds
         Box obj2 = obj;
 
-        // fails
+        // fails as object obj2 points to is immutable
         obj2.value = "bar";
     }
 

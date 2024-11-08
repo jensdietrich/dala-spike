@@ -3,12 +3,7 @@ package examples;
 import dala.Local;
 import util.Box;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-
 public class Local1 {
-
-    static BlockingQueue<Box> queue = new ArrayBlockingQueue<>(10);
 
     public static void main(String[] args) throws InterruptedException {
 

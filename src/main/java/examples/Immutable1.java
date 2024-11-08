@@ -9,8 +9,7 @@ public class Immutable1 {
         @Immutable Box obj = new Box("foo");
         // now the object pointed to by obj is annotated (not the var)
 
-        // fails
+        // fails as obj is immutable
         obj.value = "bar";
     }
-
 }
