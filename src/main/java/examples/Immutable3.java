@@ -6,14 +6,13 @@ import util.Box;
 public class Immutable3 {
 
     public static void main(String[] args) {
-        @Immutable
-        Box obj = new Box("foo");
-
+        @Immutable Box obj = new Box("foo");
         // now the object pointed to by obj is annotated (not the var)
 
+        // local alias succeeds
         Box obj2 = obj;
 
-        // MUST FAIL
+        // fails
         obj2.value = "bar";
     }
 
