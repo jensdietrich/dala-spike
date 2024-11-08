@@ -34,7 +34,7 @@ is transparent.
 ## Challenge 3 - Transfer of Objects between Threads
 
 1. always check for thread association in method returns, e.g. if an object returned by a method is annotated `@Local` and is associated with a different thread, fail
-2. could take advantage of common patterns, i.e. objects used to transfer objects between threads. example: `BlockingQueue` with its `put` and `take` methods, perhaps model an intermediate `transfer` state where no thread owns the object (between `put` and `take`). 
+2. could take advantage of common patterns, i.e. objects used to transfer objects between threads. example: `BlockingQueue` with its `put` and `take` methods, perhaps model an intermediate `transfer` state where no thread is associated with the object (between `put` and `take`). 
 
 see `examples.Isolated3`
 
