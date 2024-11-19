@@ -44,5 +44,10 @@ see `examples.Isolated3`
 
 See `src/main/java/examples` , comments indicate the intended behavioir to be injected by the instrumentation.
 
+## Useful Links
+
+1. the [bytebuddy Maven plugin](https://github.com/raphw/byte-buddy/blob/master/byte-buddy-maven-plugin) -- an example of how bytecode transformations can be applied at build time
+2. [Java Annotation Processing](https://www.baeldung.com/java-annotation-processing-builder) could be used to annotate objects using local variable annotations.
+
 
 
