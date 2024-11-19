@@ -23,6 +23,8 @@ with any of `{Immutable, Isolated,Local}`, and the association of certain object
 
 The code inserted by the instrumentation maintains those global data structures, and uses them to enforce DALA rules.
 
+See also: [Fernandez-Reyes, K., Gariano, I. O., Noble, J., Greenwood-Thessman, E., Homer, M., & Wrigstad, T. (2021, October). Dala: a simple capability-based dynamic language design for data race-freedom. In Proceedings Onward!21](https://dl.acm.org/doi/pdf/10.1145/3486607.3486747)
+
 ## Challenge 2 -- Aliasing
 
 Invocation local aliasing can be tolerated, but leaking objects to other methods cannot. Note that the instrumentation does not deal
