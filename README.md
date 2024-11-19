@@ -48,7 +48,7 @@ See `src/main/java/examples` , comments indicate the intended behavioir to be in
 
 1. the [bytebuddy Maven plugin](https://github.com/raphw/byte-buddy/blob/master/byte-buddy-maven-plugin) -- an example of how bytecode transformations can be applied at build time
 2. [Java Annotation Processing](https://www.baeldung.com/java-annotation-processing-builder) could be used to annotate objects using local variable annotations.
-3. the [M<aven compiler plugin documentation](https://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html) describes how to integrate annotation processors
+3. the [Maven compiler plugin documentation](https://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html) describes how to integrate annotation processors
 
 
 
